@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMR - Selbstverteidigung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+    <header class="bg-gray-900 text-white p-4 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-red-500 transition duration-300">JMR -
+                Selbstverteidigung</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-red-500 transition duration-300">Startseite</a></li>
+                <li><a href="kurse.html" class="hover:text-red-500 transition duration-300">Kurse</a></li>
+                <li><a href="kontakt.html" class="hover:text-red-500 transition duration-300">Kontakt</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <ul class="flex flex-col items-center space-y-2">
+                <li><a href="index.html" class="block text-white hover:text-red-500 py-2">Startseite</a></li>
+                <li><a href="kurse.html" class="block text-white hover:text-red-500 py-2">Kurse</a></li>
+                <li><a href="kontakt.html" class="block text-white hover:text-red-500 py-2">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-cover bg-center h-96 flex items-center justify-center text-center text-white p-4"
+            style="background-image: url('https://svgsilh.com/svg_v2/3299878.svg')">
+            <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Stärke Körper & Geist</h1>
+                <p class="text-lg md:text-xl mb-6">Lerne effektive Selbstverteidigungstechniken bei JMR.</p>
+                <a href="kurse.html"
+                    class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Unsere
+                    Kurse entdecken</a>
+            </div>
+        </section>
+
+        <section class="container mx-auto py-16 px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Willkommen bei JMR - Selbstverteidigung</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://svgsilh.com/svg_v2/3299878.svg"
+                        alt="Selbstverteidigung Training" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-4">
+                        Bei JMR - Selbstverteidigung geht es nicht nur darum, physisch stark zu sein. Wir lehren
+                        Disziplin, Selbstvertrauen und mentale Stärke, die dir im Alltag zugutekommt. Unsere erfahrenen
+                        Instruktoren bieten ein sicheres und unterstützendes Umfeld, in dem du effektive Techniken zur
+                        Selbstverteidigung erlernen und deine Fähigkeiten kontinuierlich verbessern kannst.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Egal, ob du Anfänger bist oder bereits Erfahrung hast, wir haben den richtigen Kurs für dich.
+                        Entdecke, wie Selbstverteidigung dein Leben bereichern kann.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-16 px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Bereit, deine Reise zu beginnen?</h2>
+            <p class="text-lg mb-8">Kontaktiere uns noch heute für eine kostenlose Probestunde!</p>
+            <a href="kontakt.html"
+                class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-full transition duration-300">Jetzt
+                Kontakt aufnehmen</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 px-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 JMR - Selbstverteidigung. Alle Rechte vorbehalten.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-red-500 transition duration-300">Datenschutz</a>
+                <a href="#" class="hover:text-red-500 transition duration-300">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

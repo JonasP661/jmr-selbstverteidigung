@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - JMR Selbstverteidigung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+    <header class="bg-gray-900 text-white p-4 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-red-500 transition duration-300">JMR -
+                Selbstverteidigung</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-red-500 transition duration-300">Startseite</a></li>
+                <li><a href="kurse.html" class="hover:text-red-500 transition duration-300">Kurse</a></li>
+                <li><a href="kontakt.html" class="hover:text-red-500 transition duration-300">Kontakt</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <ul class="flex flex-col items-center space-y-2">
+                <li><a href="index.html" class="block text-white hover:text-red-500 py-2">Startseite</a></li>
+                <li><a href="kurse.html" class="block text-white hover:text-red-500 py-2">Kurse</a></li>
+                <li><a href="kontakt.html" class="block text-white hover:text-red-500 py-2">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-16 px-4">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-12">Kontaktiere uns</h1>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold mb-6">Schreib uns eine Nachricht</h2>
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                        <input type="text" id="name" name="name"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="Dein Name" required>
+                        <p id="nameError" class="text-red-500 text-xs italic hidden">Bitte gib deinen Namen ein.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">E-Mail:</label>
+                        <input type="email" id="email" name="email"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="deine.email@example.com" required>
+                        <p id="emailError" class="text-red-500 text-xs italic hidden">Bitte gib eine gültige
+                            E-Mail-Adresse ein.</p>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Nachricht:</label>
+                        <textarea id="message" name="message" rows="5"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="Deine Nachricht an uns..." required></textarea>
+                        <p id="messageError" class="text-red-500 text-xs italic hidden">Bitte gib eine Nachricht ein.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button type="submit"
+                            class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300">Nachricht
+                            senden</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="md:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold mb-6">Unsere Kontaktdaten</h2>
+                <p class="text-gray-700 mb-4">
+                    **Adresse:**<br>
+                    Musterstraße 123<br>
+                    12345 Musterstadt<br>
+                    Deutschland
+                </p>
+                <p class="text-gray-700 mb-4">
+                    **Telefon:**<br>
+                    <a href="tel:+49123456789" class="text-blue-600 hover:underline">+49 123 456789</a>
+                </p>
+                <p class="text-gray-700 mb-4">
+                    **E-Mail:**<br>
+                    <a href="mailto:info@jmr-selbstverteidigung.de"
+                        class="text-blue-600 hover:underline">info@jmr-selbstverteidigung.de</a>
+                </p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Unsere Öffnungszeiten:</h3>
+                <ul class="text-gray-700">
+                    <li>Montag - Freitag: 10:00 - 20:00 Uhr</li>
+                    <li>Samstag: 10:00 - 14:00 Uhr</li>
+                    <li>Sonntag: Geschlossen</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 px-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 JMR - Selbstverteidigung. Alle Rechte vorbehalten.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-red-500 transition duration-300">Datenschutz</a>
+                <a href="#" class="hover:text-red-500 transition duration-300">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
